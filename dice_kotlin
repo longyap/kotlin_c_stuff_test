@@ -1,0 +1,15 @@
+//class shit and function  for dice yo 
+fun main() {
+    val dice = dice()
+    val dice_roll = dice.roll()
+    println(dice_roll)
+    dice.side = 25
+    
+}
+
+class dice {
+    var side =6
+    fun roll():Int{
+        return (1..side).random()
+    }
+}
